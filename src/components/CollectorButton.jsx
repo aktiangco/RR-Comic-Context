@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
+import StylesContext from "../StylesContext";
+
 
 
 const CollectorButton = () => {
+  const buttonStyling = useContext(StylesContext)
   
   return (
     <div>
-      <button>
+      <button style={buttonStyling}>
         Click Here!
       </button>
     </div>
